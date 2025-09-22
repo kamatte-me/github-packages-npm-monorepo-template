@@ -1,0 +1,9 @@
+# Dependencies
+node_modules/
+
+# TypeScript
+*.tsbuildinfo
+
+# Misc
+.DS_Store
+*.pem

@@ -1,0 +1,13 @@
+packages:
+  - packages/*
+
+catalog:
+  typescript: 5.9.2
+  publint: 0.3.12
+  vite: 7.1.7
+  vitest: 3.2.4
+  vite-plugin-dts: 4.5.4
+  rollup-plugin-node-externals: 8.1.1
+
+onlyBuiltDependencies:
+  - esbuild

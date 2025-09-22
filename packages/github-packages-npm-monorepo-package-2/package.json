@@ -1,0 +1,63 @@
+{
+  "name": "@kamatte-me/github-packages-npm-monorepo-template-package-2",
+  "version": "0.0.0",
+  "description": "GitHub Packages npm Package Template - Package 2",
+  "keywords": [],
+  "homepage": "https://github.com/@kamatte-me/github-packages-npm-template#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kamatte-me/github-packages-npm-template.git",
+    "directory": "packages/github-packages-npm-monorepo-package-2"
+  },
+  "license": "UNLICENSED",
+  "author": "kamatte-me",
+  "sideEffects": false,
+  "type": "module",
+  "exports": {
+    ".": {
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      },
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      }
+    }
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "vite build",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "lint:package": "publint"
+  },
+  "devDependencies": {
+    "publint": "catalog:",
+    "rollup-plugin-node-externals": "catalog:",
+    "typescript": "catalog:",
+    "vite": "catalog:",
+    "vite-plugin-dts": "catalog:",
+    "vitest": "catalog:"
+  },
+  "peerDependencies": {
+    "typescript": ">=4.4.x"
+  },
+  "peerDependenciesMeta": {
+    "typescript": {
+      "optional": true
+    }
+  },
+  "engines": {
+    "node": ">=10.3.x"
+  },
+  "publishConfig": {
+    "access": "restricted",
+    "registry": "https://npm.pkg.github.com"
+  }
+}
