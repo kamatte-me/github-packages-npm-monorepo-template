@@ -33,8 +33,8 @@ ESM/CJSに対応するnpmパッケージをMonorepoで作成し、GitHub Package
    - `repository`
 4. [`.github/workflows/snapshot-release.yml`](./.github/workflows/snapshot-release.yml)のパッケージ名部分を書き換えてください。
    ```diff
-   - @kamatte-me/github-packages-npm-monorepo-package-<number>
-   + @<your-org>/<repository-name>
+   - @kamatte-me/github-packages-npm-monorepo-template-package-<number>
+   + @<your-org>/<package-name>
    ```
 5. 各READMEを更新しましょう。
 6. [changeset-bot](https://github.com/apps/changeset-bot) GitHub AppをGitHubリポジトリにインストールしてください。
