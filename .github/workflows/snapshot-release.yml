@@ -45,10 +45,10 @@ jobs:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Get released version - github-packages-npm-monorepo-package-1
         id: get-version-package-1
-        run: echo "version=$(node -p "require('./packages/package-1/package.json
+        run: echo "version=$(node -p "require('./packages/github-packages-npm-monorepo-package-1/package.json').version")" >> "$GITHUB_OUTPUT"
       - name: Get released version - github-packages-npm-monorepo-package-2
         id: get-version-package-2
-        run: echo "version=$(node -p "require('./packages/package-2/package.json').version")" >> "$GITHUB_OUTPUT"
+        run: echo "version=$(node -p "require('./packages/github-packages-npm-monorepo-package-2/package.json').version")" >> "$GITHUB_OUTPUT"
       - uses: int128/issues-action@v2
         with:
           context: true
