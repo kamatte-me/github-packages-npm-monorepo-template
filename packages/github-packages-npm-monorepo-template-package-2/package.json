@@ -38,6 +38,7 @@
     "lint:package": "publint"
   },
   "devDependencies": {
+    "@types/node": "catalog:",
     "publint": "catalog:",
     "rollup-plugin-node-externals": "catalog:",
     "typescript": "catalog:",
