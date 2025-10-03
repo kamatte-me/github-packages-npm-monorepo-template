@@ -30,8 +30,8 @@ jobs:
       - name: Create changeset
         run: |
           { echo "---"; \
-            echo "'@kamatte-me/github-packages-npm-monorepo-package-1': patch"; \
-            echo "'@kamatte-me/github-packages-npm-monorepo-package-2': patch"; \
+            echo "'@kamatte-me/github-packages-npm-monorepo-template-package-1': patch"; \
+            echo "'@kamatte-me/github-packages-npm-monorepo-template-package-2': patch"; \
             echo "---"; \
             echo ""; \
             echo "Snapshot release"; \
@@ -43,12 +43,12 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - name: Get released version - github-packages-npm-monorepo-package-1
+      - name: Get released version - github-packages-npm-monorepo-template-package-1
         id: get-version-package-1
-        run: echo "version=$(node -p "require('./packages/github-packages-npm-monorepo-package-1/package.json').version")" >> "$GITHUB_OUTPUT"
-      - name: Get released version - github-packages-npm-monorepo-package-2
+        run: echo "version=$(node -p "require('./packages/github-packages-npm-monorepo-template-package-1/package.json').version")" >> "$GITHUB_OUTPUT"
+      - name: Get released version - github-packages-npm-monorepo-template-package-2
         id: get-version-package-2
-        run: echo "version=$(node -p "require('./packages/github-packages-npm-monorepo-package-2/package.json').version")" >> "$GITHUB_OUTPUT"
+        run: echo "version=$(node -p "require('./packages/github-packages-npm-monorepo-template-package-2/package.json').version")" >> "$GITHUB_OUTPUT"
       - uses: int128/issues-action@v2
         with:
           context: true
@@ -56,8 +56,8 @@ jobs:
             ## スナップショット版がpublishされました
             
             ```
-            @kamatte-me/github-packages-npm-monorepo-package-1@${{ steps.get-version-package-1.outputs.version }}
-            @kamatte-me/github-packages-npm-monorepo-package-2@${{ steps.get-version-package-2.outputs.version }}
+            @kamatte-me/github-packages-npm-monorepo-template-package-1@${{ steps.get-version-package-1.outputs.version }}
+            @kamatte-me/github-packages-npm-monorepo-template-package-2@${{ steps.get-version-package-2.outputs.version }}
             ```
       - if: always()
         uses: int128/issues-action@v2

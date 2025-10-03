@@ -1,13 +1,13 @@
 {
-  "name": "@kamatte-me/github-packages-npm-monorepo-package-1",
+  "name": "@kamatte-me/github-packages-npm-monorepo-template-package-2",
   "version": "0.0.0",
-  "description": "GitHub Packages npm Package Template - Package 1",
+  "description": "GitHub Packages npm Package Template - Package 2",
   "keywords": [],
-  "homepage": "https://github.com/@kamatte-me/github-packages-npm-template#readme",
+  "homepage": "https://github.com/@kamatte-me/github-packages-npm-monorepo-template#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kamatte-me/github-packages-npm-template.git",
-    "directory": "packages/github-packages-npm-monorepo-package-1"
+    "url": "git+https://github.com/kamatte-me/github-packages-npm-monorepo-template.git",
+    "directory": "packages/github-packages-npm-monorepo-template-package-2"
   },
   "license": "UNLICENSED",
   "author": "kamatte-me",
