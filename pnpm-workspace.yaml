@@ -2,6 +2,7 @@ packages:
   - packages/*
 
 catalog:
+  '@types/node': 22.18.8
   typescript: 5.9.3
   publint: 0.3.13
   vite: 7.1.9
