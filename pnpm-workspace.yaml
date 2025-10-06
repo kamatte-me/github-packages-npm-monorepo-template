@@ -4,7 +4,7 @@ packages:
 catalog:
   '@types/node': 22.18.8
   typescript: 5.9.3
-  publint: 0.3.13
+  publint: 0.3.14
   vite: 7.1.9
   vitest: 3.2.4
   vite-plugin-dts: 4.5.4
