@@ -3,9 +3,9 @@
   "description": "GitHub Packages npm Monorepo Package Template",
   "private": true,
   "scripts": {
-    "lint": "biome check .",
-    "lint:fix": "biome check --fix .",
-    "lint:ci": "biome ci .",
+    "lint": "biome check",
+    "lint:fix": "biome check --write",
+    "lint:ci": "biome ci",
     "changeset:version": "changeset version && pnpm lint:fix",
     "changeset:publish": "pnpm -r build && changeset publish"
   },
