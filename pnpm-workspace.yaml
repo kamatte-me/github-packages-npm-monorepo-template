@@ -8,7 +8,7 @@ catalog:
   vite: 7.1.12
   vitest: 3.2.4
   vite-plugin-dts: 4.5.4
-  rollup-plugin-node-externals: 8.1.1
+  rollup-plugin-node-externals: 8.1.2
 
 onlyBuiltDependencies:
   - esbuild
