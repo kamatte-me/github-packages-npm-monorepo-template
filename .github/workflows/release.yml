@@ -31,7 +31,7 @@ jobs:
           cache: pnpm
           registry-url: 'https://npm.pkg.github.com'
       - run: pnpm install
-      - uses: changesets/action@v1
+      - uses: changesets/action@v2.1.2
         with:
           version: pnpm changeset:version
           publish: pnpm changeset:publish
